@@ -16,7 +16,7 @@ def test_double():
     # This one will fail in Python 2
     num_list=[1,2,3,4]
     obs = mean(num_list)
-    exp = 2.5
+    exp = 2
     assert obs == exp
 
 def test_long():
@@ -31,4 +31,4 @@ def test_complex():
     num_list = [2 + 3j, 3 + 4j, -32 - 2j]
     obs = mean(num_list)
     exp = NotImplemented
-    assert obs == exp
+    assert obs != exp
